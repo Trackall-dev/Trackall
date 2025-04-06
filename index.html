@@ -15,7 +15,7 @@
             <p class="title">No more switching apps. Every delivery, right here.</p>
             <p class="sub">From checkout to doorstep — we’ve got it covered. <br /> Download the latest version here</p>
             <div class="btns">
-                <button class="btn" id="download"><img src="./assets/download.png" alt="" class="icon"> Download Early Access</button>
+                <a href="./app/trackall_early_access.apk" download class="btn"><img src="./assets/download.png" alt="" class="icon"> Download Early Access</a>
                 <a href="/" class="btn pl"><img src="./assets/playstore.png" alt="" class="icon"> Soon on Playstore</a>
             </div>
         </div>
@@ -33,13 +33,5 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        document.getElementById('download').addEventListener("click", () => {
-            const a = document.createElement("a");
-            a.href = "./app/trackall_early_access.apk";
-            a.setAttribute("download", "trackall.apk");
-            a.click()
-        })
-    </script>
 </body>
 </html>
